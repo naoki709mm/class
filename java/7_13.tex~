@@ -1,0 +1,15 @@
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\title{数値解析7/13}
+\date{\today}
+
+\usepackage[height=26cm,width=16cm]{geometry}
+
+\begin{document}
+
+\maketitle
+
+\section{数値微分}
+点列データから数値を計算する。
+
+\end{document}

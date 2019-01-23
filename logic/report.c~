@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+#define N 100
+
+int main(void){
+  
+  char f[N];
+
+  printf("f(x,y,z)= ");scanf("%s",f);
+
+  
+  
+  printf("\n主加法標準形へ展開すると\n");
+  printf("f(x,y,z) = %s\n",f);
+  
+  return 0;
+}

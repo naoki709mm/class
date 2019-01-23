@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+#define N 10
+
+int main(int argc ,char argv[]){
+  int gus[N][N]={};
+  char fn=argv[1];
+  FILE *fr;
+  
+  if((fr=fopen(fn,”r”)) == NULL)
+    printf(”ファイルを開けません \n”);
+  else {
+    while(!feof(fr)){
+      fscanf(

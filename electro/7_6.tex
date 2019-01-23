@@ -1,0 +1,66 @@
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+
+\title{電磁誘導}
+\date{\today}
+
+\usepackage{bm}
+\usepackage[height=26cm,width=16cm]{geometry}
+
+\begin{document}
+
+\maketitle
+
+\section{}
+\subsection{}
+	電磁場が時間変化する場合を考える。ファラデーは電流が磁場を作るなら、逆に、磁場が電流を作るはずだと考えた。そして、2つのコイルを近くに並べ、一方に、電流を流した。しかし、電流を流し続けても何も起こらなかった。
+	
+	片方の回路に検電器、片方にスイッチ付きの回路を用意し、後者の回路をオンオフするときに磁場の時間変化が発生。
+
+\begin{itemize}
+	\item 回路に生じる起電力$\phi$ は回路を貫く磁束の時間変化、$\frac{dt}{d\phi}$に比例する。
+	
+	\item 一様な磁束密度{\bf B}が、面積Sの平面を貫く時
+	 	\begin{equation}
+		 	\Phi=BS
+		\end{equation}
+										
+		一般
+		\begin{equation}
+			\Phi=\int_S \bm{B} (\bm{r}) \bm{n} (r)dS
+		\end{equation}
+	
+		F.Naunmanが数式化
+		\begin{equation}
+			\phi=-{\it k} \frac(dt)(d\Phi)
+		\end{equation}
+	
+		単位
+		\begin{equation}
+			[\Phi]=[wb] :ウェーバー[\phi]=[V] :ボルト
+		\end{equation}
+	
+	\item レンツの法則
+		回路Cの緑にした、曲面Swo貫く磁束$\Phi$ は曲面によらず一定。\\
+		任意の閉じた回路Cについて
+		\begin{equation}
+			\phi=\int_C {\it E(r, t)t(r)} ds = -\frac{dt}{d\Phi(t)}
+		\end{equation}
+		\begin{equation}
+			\int_C \bm{E}(\bm{r},t)*t(r) ds = \int_S \Delta \times \bm{E}(\bm{r},t) \bm{n}(r) dS
+		\end{equation}
+		\begin{equation}
+			-\frac{dt}{d\Phi(t)}=\frac{dt}{d}\int_S \bm{B}(\bm(r),t)*\bm{n}(\bm{r}) dS 
+			             =-\int_S \frac{\partial t}{\partial \bm{B}(\bm{r},t)}*\bm{n}(\bm{r})
+		\end{equation}
+		\begin{equation}
+			\Delta \times \bm{B}(\bm{r},t) = -\frac{\partial t}{\partial \bm{B}(\bm(r),t)}
+		\end{equation}
+		微分系の電磁誘導の法則\\
+		これは回路がなくても成り立つ。空間経路を考えればよい。
+\end{itemize}		
+\subsection{}
+	運動する回路ないの起電力$\bm{B}(\bm{r})$は時間変化しないとする。この$\bm{B}$中を回路Cを速度$\bm{v}$で動かしたとする
+\section{}
+	自己インダクタンスはやらない
+\end{document}	

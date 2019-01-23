@@ -1,0 +1,14 @@
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+
+\title{電磁誘導}
+\date{\today}
+
+\usepackage{bm}
+\usepackage[height=26cm,width=16cm]{geometry}
+
+\begin{document}
+
+\maketitle
+
+\section{マクスウェル、アンペールの法則}

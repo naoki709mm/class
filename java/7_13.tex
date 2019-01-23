@@ -1,0 +1,48 @@
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\title{数値解析}
+\date{\today}
+
+\usepackage[height=26cm,width=16cm]{geometry}
+
+\begin{document}
+
+\maketitle
+
+\section{数値微分}
+点列データから数値を計算する。
+\subsection{例}
+${(x_0,f_0)(x_1,f_1)(x_2,f_2)}を２次ラグランジュ多項式で補間する
+\begin{equation}
+  P(x)=f_0\frac((x-x_1)(x-x_2))((x_0-x_1)(x_0-x_2))+f_1\frac((x-x_0)(x-x_2))(x_1-x_0)(x_1-x_2))+f_2\frac((x-x_0)(x-x_1))((x_2-x_0)(x_2-x_1))
+  P(x)'=f_0\frac(2x-x_1-x_2)((x_0-x_1)(x_0-x_2))+f_1\frac(2x-x_0-x_2)((x_1-x_0)(x_1-x_2))+f_2
+\end{equation}
+
+\subsection{関数f(x)が与えられて、ある点x_0での微係数を計算する場合}
+\begin{equation}
+  f(x_0+h)=f(x_0)+hf'(x_0)+\frac(h^2)(2!)f''(x_0)+\frac(h^3)(3!)f^{3}(x_0)・・・
+  f(x_0-h)=f(x_0)-hf'(x_0)+\frac(h^2)(2!)f''(x_0)-\frac(h^3)(3!)f^{3}(x_0)・・・
+  f(x_0+h)-f(x_0-h)=2hf'(x_0)+0(h^3)
+  f'(x_0)=\frac(f(x_0+h)-f(x_0-h))(2h)
+  f(x_0+h)-f(x_0-h)=2f(x_0)h^2f''(x_0)+0(h^2)
+  f''(x_0)=\frac(f(x_0+h)-2f(x_0)+f(x_0-h))(h^2))
+\end{equation}
+\section{リチャードソンの外挿}
+\begin{equation}
+  f'(x_0)=\frac(f(x_0+h)-f(x_0-h))(2h)-\frac(1)(6)h^2f^{3}(x_0)-\frac(1)(120)h^4f^{5}(x_0)・・・(1)
+  hをrhに置き換える
+  f'(x_0)=\frac(f(x_0+rh)-f(x_0-rh))(2rh)-\frac(1)(6)(rh)^2f^{3}(x_0)-\frac(1)(120)(rh)^4f^{5}(x_0)・・・(2)
+  (2)-r^2*(1)
+\end{equation}
+\section{数積分}
+区間${[a,b]}$をいくつかの区間二分割し、点${x_1}$に対して補間関数を積分することで積分値を求める(ニュートン・コーツ系の積分公式)
+\subsection{台形則}
+${x_0,x_1)}$を線形ラグランジュ補間多項式で積分する
+\begin{equation}
+  \int_{x_0}_{x_1}f(x)dx≒int_{x_0}_{x_1}p(x)
+\end{equation}
+\subsection{シンプソン則}
+2次のラグランジュ多項式。2つの区間の面積を計算するのに３点いる。\\
+
+
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass{jsarticle}
+
+\title{機械学習}
+
+\date{10/15}
+
+\begin{document}
+
+\maketitle
+
+\section{強化学習}
+	\subsection{softmax法}
+		softmax法はV(i) > 0にしか使えないから $e^(\frac{V(i)}{T})$にすることで、絶対に正の値になる。\\
+		Tの大小で選択確率は変化。Tを大きくすると、今回の例だと1/3に近く、小さく(T → 0)すると、価値Vの大きいactionを主に選択
+		\begin{equation}
+			P(2)=\frac{e^(\frac{20}{T})}{e^(\frac{10}{T})+e^(\frac{30}{T})+e^(\frac{20}{T})} 
+			= \frac{1}{\frac{e^(\frac{10}{T})}{e^(\frac{30}{T})}+1+\frac{e^(\frac{20}{T})}{e^(\frac{30}{T})}} =1z
+		\end{equation}
+		
+	\subsection{強化学習の基本用語}
+		Environment(環境) ・・・ 人でいう腕、口などの脳以外のもの。ロボットだとモーターとか、もちろん道の起伏とかも含まれる。\\
+		state(状態) ・・・ 腕がどの位置 \\
+		action(行動) ・・・ やりたい行動 \\
+	\subsection{状態、行動、報酬}
+		state ・・・ 最初に→を選べばc  ←を選べばa
+		
+	\subsection{強化学習における問題}
+		そう報酬をどうするか
+
+\section{Q学習}
+	行動価値関数Q
+		                  
+\section{11/26}
+\begin{equation}
+	\Delta w_i=-ε\frac{\delta E}{\partial w_i}=-ε\frac{dE}{dy}\frac{dy}{ds}\frac{\partial s}{\partial w_i}
+\end{equation}		           
+\end{document}

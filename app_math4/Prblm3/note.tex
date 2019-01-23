@@ -1,0 +1,39 @@
+\documentclass{jsarticle}
+\usepackage{color}
+\usepackage{bm}
+\usepackage[height=26cm,width=16cm]{geometry} 
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage[dvipdfmx]{graphicx}
+
+\graphicspath{{./image/}}
+
+\begin{document}
+\section{10}
+\begin{numcases}
+		m\frac{d^2x}{dt^2}=k(x_2-x_1)\\
+		M\frac{d^2x_2}{dt^2}=-k(x_2-x_1)+k(x_3-x_2)\\
+		m\frac{d^2x_3}{dt^2}=-k(x_3-x_2)
+\end{numcases}
+$x_1=A_1e^{iωt},x_2=A_2e^{iωt},x_3=A_3e^{iωt}$とおくと
+\begin{numcases}
+	{}
+		-mA_1ω^2=k(A_2-A_1)\\
+		-MA_2ω^2=k(A_1-2A_2+A_2)\\
+		-mA_3ω^2=k(A_2-A_3)
+\end{numcases}
+
+
+\begin{center}
+	\includegraphics[width=10cm]{11_27.JPG}
+\end{center}
+\begin{center}
+	\includegraphics[width=10cm]{11_27_2.JPG}
+\end{center}
+\begin{center}
+	\includegraphics[width=10cm]{11_27_3.JPG}
+\end{center}
+\begin{center}
+	\includegraphics[width=10cm]{11_27_4.JPG}
+\end{center}
+\end{document}
