@@ -1,6 +1,6 @@
 /*** 奥屋 直己
  *** 課題1 問題1 \:単価と個数から金額を求め、さらに合計金額と消費税込の金額を計算するプログラム
- *** 提出日
+ *** 提出日 5月8日
  ***/
 
 #include<stdio.h>
@@ -11,7 +11,7 @@ int main(void){
   int num,prc; //qtyを個数、prcを単価とする
   
   FILE *fr,*fw;
-
+  
   if((fr=fopen("input.data","r")) == NULL){ //input.dataが読み込めなかった場合以下を実行
     printf("ファイルを開けません");
   }
@@ -30,10 +30,10 @@ int main(void){
     }
     fclose(fr); //input.dataを閉じる
   }
-
-  tax=ttl*0.08;
+  
+  tax=ttl*0.08; //消費税の計算
   printf("  total  :%5d\n",ttl);
   printf("total+tax:%5d\n",ttl+tax);
-
+  
   return 0;
 }
