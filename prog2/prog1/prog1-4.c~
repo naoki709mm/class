@@ -1,0 +1,33 @@
+/*** 奥屋 直己
+ *** 課題1 問題3 :整数nの平方根を探すプログラム
+ *** 提出日 5月8日
+ ***/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main( void ) {
+  
+  time_t tp;
+  int ans; //正解用の変数
+  int num; 
+  
+  time(&tp); srand48(tp); //乱数の初期化
+  ans=(int)(drand48()*10000); //10000倍して整数化すると4桁の整数になる
+  
+  printf("4桁の整数を入力してください\n");
+  scanf("%d",&num);
+  
+  while(num != ans){
+    if(num > ans)
+      printf("正解はもっと小さい数です\n");
+    else
+      printf("正解はもっと大きい数です\n");
+    printf("もう一度4桁の整数を入力してください\n");
+    scanf("%d",&num);
+  }
+  printf("正解です");
+  
+  return 0;
+}
