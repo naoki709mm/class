@@ -1,0 +1,15 @@
+//multiplication table
+
+#include <stdio.h>
+
+int main(void){
+  
+  int num;
+  
+  printf("Which multiplication table do you want to see? Enter a number between 1 and 10:\n");
+  scanf("%d",&num);
+  
+  if(num == 0){
+    printf("0\n");
+  }
+  else if(num < 0 && 
