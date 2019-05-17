@@ -1,6 +1,7 @@
 /*** 奥屋 直己
  *** 課題1 問題3 :整数nの平方根を探すプログラム
  *** 提出日 5月8日
+ *** 再提出日 ５月15日
  ***/
 
 #include <stdio.h>
@@ -15,9 +16,9 @@ int main(void){
   printf("整数nを入力してください:");
   scanf("%d",&n);
   
-  if(n < 0){ //0以下が入力された場合、Errorを出力し、1を返して終了
+  if(n < 0){ //0以下が入力された場合、Errorを出力し、終了
     printf("Error\n");
-    return 1;
+    return 0;
   }
   
   sqt=(int)sqrt(n); //整数nの平方根をint型でsqtに代入

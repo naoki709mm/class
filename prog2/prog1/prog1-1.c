@@ -7,7 +7,7 @@
 
 int main(void){
   
-  int sum,ttl,tax; //sumを小計金額、ttlを合計金額、taxを消費税とする
+  int sum,ttl=0,tax; //sumを小計金額、ttlを合計金額、taxを消費税とする
   int num,prc; //qtyを個数、prcを単価とする
   
   FILE *fr,*fw;
