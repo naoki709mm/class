@@ -1,0 +1,21 @@
+/*** 奥屋 直己                                                                  
+ *** 課題2 問題1:内積を計算するプログラム
+ *** 提出日 5月17日                                                              
+ ***/
+
+#define N 100
+
+#include <stdio.h>
+
+int main(void){
+  
+  int otp;
+  char inp[N];
+
+  printf("文字列を入力してください:");
+  scanf("%s",inp);
+
+  printf("%s",inp);
+
+  return 0;
+}
