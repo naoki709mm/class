@@ -1,0 +1,33 @@
+/*** 奥屋 直己                                                                  
+ *** 課題2 問題3:ビンゴプログラム
+ *** 提出日 5月17日                                                              
+ ***/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define N 100
+#define M 100
+#define BNG 5
+
+int main(void){
+  
+  int i,j;
+  int bng[N][M];
+  int rng[N][M];
+  int exc[N][M];
+  time_t tp;
+  
+  time(&tp);
+  srand48(tp);
+  
+  j=1;
+  for(i=0 ;i<BNG ;i++){
+    for(j<=BNG*3 ;j++){
+      rng[i][j];
+    }
+  }
+  
+  return 0;
+}

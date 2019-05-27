@@ -3,9 +3,9 @@
  *** 提出日 5月17日                                                              
  ***/
 
-#define N 100
-
 #include <stdio.h>
+
+#define N 100
 
 int main(void){
 
@@ -13,10 +13,10 @@ int main(void){
   int n;
   double x[N],y[N]; //ベクトルxとベクトルyをそれぞれ代入する変数
   double inn=0.0; //内積の値を代入する変数
-
+  
   printf("次数nを入力:");
   scanf("%d",&n);
-
+  
   if(n <= 0){ //次数nが0以下のとき,Errorを出力して終了
     printf("Error\n");
     return 0;
@@ -27,7 +27,7 @@ int main(void){
     printf("x%d=",i+1); //次数と合わせるためにi+1とする
     scanf("%lf",&x[i]);
   }
-
+  
   printf("\nベクトルyを入力\n");
   for(i=0 ;i<n ;i++){ //yを入力
     printf("y%d=",i+1);
@@ -36,8 +36,8 @@ int main(void){
   
   for(i=0 ;i<n ;i++)
     inn+=x[i]*y[i];
-
+  
   printf("\n内積:%lf\n",inn);
-
+  
   return 0;
 }
