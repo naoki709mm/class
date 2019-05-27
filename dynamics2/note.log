@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.6.25)  13 MAY 2019 13:29
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.6.25)  27 MAY 2019 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -189,7 +189,7 @@ File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
 )
-No file note.aux.
+(./note.aux)
 \openout1 = `note.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -208,6 +208,7 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -252,16 +253,62 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 14.
 File: ./image/5_13_1.JPG Graphic file (type bmp)
 <./image/5_13_1.JPG>
+File: ./image/5_13_2.JPG Graphic file (type bmp)
+<./image/5_13_2.JPG>
+File: ./image/5_13_3.JPG Graphic file (type bmp)
+<./image/5_13_3.JPG>
+File: ./image/5_13_4.JPG Graphic file (type bmp)
+<./image/5_13_4.JPG>
+File: ./image/5_13_5.JPG Graphic file (type bmp)
+<./image/5_13_5.JPG>
 [1
 
-] (./note.aux) ) 
+]
+File: ./image/5_13_6.JPG Graphic file (type bmp)
+<./image/5_13_6.JPG>
+File: ./image/5_20_1.JPG Graphic file (type bmp)
+<./image/5_20_1.JPG>
+File: ./image/5_20_2.JPG Graphic file (type bmp)
+<./image/5_20_2.JPG>
+File: ./image/5_20_3.JPG Graphic file (type bmp)
+<./image/5_20_3.JPG>
+ [2]
+File: ./image/5_20_4.JPG Graphic file (type bmp)
+<./image/5_20_4.JPG>
+File: ./image/5_20_5.JPG Graphic file (type bmp)
+<./image/5_20_5.JPG>
+File: ./image/5_20_6.JPG Graphic file (type bmp)
+<./image/5_20_6.JPG>
+File: ./image/5_27_1.JPG Graphic file (type bmp)
+<./image/5_27_1.JPG>
+ [3]
+File: ./image/5_27_2.JPG Graphic file (type bmp)
+<./image/5_27_2.JPG>
+File: ./image/5_27_3.JPG Graphic file (type bmp)
+<./image/5_27_3.JPG>
+ [4]
+File: ./image/5_27_4.JPG Graphic file (type bmp)
+<./image/5_27_4.JPG>
+File: ./image/5_27_5.JPG Graphic file (type bmp)
+<./image/5_27_5.JPG>
+File: ./image/5_27_6.JPG Graphic file (type bmp)
+<./image/5_27_6.JPG>
+ [5]
+File: ./image/5_27_7.JPG Graphic file (type bmp)
+<./image/5_27_7.JPG>
+File: ./image/5_27_8.JPG Graphic file (type bmp)
+<./image/5_27_8.JPG>
+ [6]
+File: ./image/5_27_9.JPG Graphic file (type bmp)
+<./image/5_27_9.JPG>
+ [7] (./note.aux) ) 
 Here is how much of TeX's memory you used:
- 2151 strings out of 493273
- 27565 string characters out of 6144919
- 102163 words of memory out of 5000000
- 6091 multiletter control sequences out of 15000+600000
+ 2213 strings out of 493273
+ 28763 string characters out of 6144919
+ 103163 words of memory out of 5000000
+ 6131 multiletter control sequences out of 15000+600000
  9539 words of font info for 42 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,5n,21p,218b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,5n,21p,218b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on note.dvi (1 page, 604 bytes).
+Output written on note.dvi (7 pages, 4148 bytes).

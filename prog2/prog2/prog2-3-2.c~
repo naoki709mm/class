@@ -1,0 +1,68 @@
+ 1> /*** 奥屋 直己                                                                  
+ 2>  *** 課題2 問題3:ビンゴプログラム
+ 3>  *** 提出日 5月22日                                                              
+ 4>  ***/
+ 5>
+ 6> #include <stdio.h>
+ 7> #include <stdlib.h>
+ 8> #include <time.h>
+ 9>
+10> #define N 100
+11> #define M 100
+12> #define BNG 5
+13>
+14> int main(void){
+15>   
+16>   int i,j;
+17>   int num=1;
+18>   int tmp;
+19>   int max=BNG*3; //数の範囲の最大値
+20>   int cnt=(int)BNG/2.0; //ビンゴカードの真ん中のマスの値
+21>   int bng[N][M];
+22>   int rng[N][M]; //列ごとの数の範囲を格納するはいれつ
+23>   int exc[M]; //除外する要素数を格納する配列
+24>   time_t tp;
+25>   
+26>   time(&tp);
+27>   srand48(tp);
+28>   
+29>   //配列rngを初期化
+30>   for(i=0 ;i<BNG ;i++){
+31>     for(j=0 ;j<max ;j++){
+32>       rng[i][j]=num;
+33>       num++;
+34>     }
+35>   }
+36>   
+37>   //配列excを0で初期化
+38>   for(i=0 ;i<BNG ;i++){
+39>     for(j=0 ;j<max ;j++)
+40>       exc[j]=0;
+41>     for(j=0 ;j<BNG ;j++){
+42>       if(i == cnt && j == cnt){ //真ん中の場合，0を入力
+43>         bng[i][j]=0;
+44>       }
+45>       else{
+46>         do{ //選ばれた配列rngの要素が1度現れていないかの判断
+47>           tmp=(int)(drand48()*15);
+48>         }while(exc[tmp] != 0); //1度使われた要素には1を入力
+49>         exc[tmp]=1;
+50>         bng[i][j]=rng[i][tmp];
+51>       }
+52>     }
+53>   }
+54>   
+55>   //ビンゴ風に表示する
+56>   for(i=0 ;i<BNG ;i++){
+57>     for(j=0 ;j<BNG ;j++){
+58>       if(bng[j][i] == 0)
+59>         printf("|free");
+60>       else
+61>         printf("|%3d ",bng[j][i]);
+62>     }
+63>     printf("|\n");
+64>   }
+65>     
+66>   return 0;
+67> }
+68> 
