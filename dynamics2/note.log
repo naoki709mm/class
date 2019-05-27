@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.6.25)  20 MAY 2019 13:59
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.6.25)  27 MAY 2019 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -279,14 +279,36 @@ File: ./image/5_20_5.JPG Graphic file (type bmp)
 <./image/5_20_5.JPG>
 File: ./image/5_20_6.JPG Graphic file (type bmp)
 <./image/5_20_6.JPG>
- [3] [4] (./note.aux) ) 
+File: ./image/5_27_1.JPG Graphic file (type bmp)
+<./image/5_27_1.JPG>
+ [3]
+File: ./image/5_27_2.JPG Graphic file (type bmp)
+<./image/5_27_2.JPG>
+File: ./image/5_27_3.JPG Graphic file (type bmp)
+<./image/5_27_3.JPG>
+ [4]
+File: ./image/5_27_4.JPG Graphic file (type bmp)
+<./image/5_27_4.JPG>
+File: ./image/5_27_5.JPG Graphic file (type bmp)
+<./image/5_27_5.JPG>
+File: ./image/5_27_6.JPG Graphic file (type bmp)
+<./image/5_27_6.JPG>
+ [5]
+File: ./image/5_27_7.JPG Graphic file (type bmp)
+<./image/5_27_7.JPG>
+File: ./image/5_27_8.JPG Graphic file (type bmp)
+<./image/5_27_8.JPG>
+ [6]
+File: ./image/5_27_9.JPG Graphic file (type bmp)
+<./image/5_27_9.JPG>
+ [7] (./note.aux) ) 
 Here is how much of TeX's memory you used:
- 2186 strings out of 493273
- 28232 string characters out of 6144919
+ 2213 strings out of 493273
+ 28763 string characters out of 6144919
  103163 words of memory out of 5000000
- 6113 multiletter control sequences out of 15000+600000
+ 6131 multiletter control sequences out of 15000+600000
  9539 words of font info for 42 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,5n,21p,218b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,5n,21p,218b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on note.dvi (4 pages, 2500 bytes).
+Output written on note.dvi (7 pages, 4148 bytes).
