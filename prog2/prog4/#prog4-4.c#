@@ -1,0 +1,43 @@
+/*** 氏名(Name) 奥屋 直己
+ *** 課題 4 問題 4 : フィボナッチ数列を求める
+ *** 提出日: 7月10日
+ ***/
+
+#include <stdio.h>
+
+#define N 100
+
+//フィボナッチ数列を求める関数
+long int Fibonacci(int n){
+  
+  if(n >= 2)                              //nが2以上の時,再起関数呼出
+    return (Fibonacci(n-1)+Fibonacci(n-2)); //n-1とn-2を引数としたFibonacci関数を足し合わせる
+  else if(n == 1)                         //nが1のとき1を返し，終了
+    return 1;
+  else if(n == 0)                         //nが0のとき0を返し，終了
+    return 0;
+  
+}
+
+int main(void){
+  
+  int i;
+  long int f;
+  int n;
+  
+  printf("n = ");
+  scanf("%d",&n);
+  
+  if(n < 0){                               //nが負の値の時,Errorを表示する
+    printf("Error\n");
+    return 0;
+  }
+  
+  printf("-------Ans-------\n");
+  for(i=0 ;i<n+1 ;i++){                    //0からnまでの数の値のn+1回ループする
+    f=Fibonacci(i);
+    printf("n=%3d : %ld\n",i,f);
+  }
+  
+  return 0;
+}

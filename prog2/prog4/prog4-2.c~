@@ -1,0 +1,29 @@
+//Rule 90
+#include <stdio.h>
+
+#define N 100
+#define CELL 100
+#define ONE 50
+
+void display(int array[CELL]){
+  
+  int i;
+  
+  for(i=0 ;i<CELL ;i++){
+    if(array[i] == 0)
+      printf("□");
+    else
+      printf("■");
+  }
+  printf("\n");
+}
+
+int main(void){
+  
+  int i;
+  int array[CELL]={};
+  
+  array[ONE]=1;
+  
+  display(array);
+}

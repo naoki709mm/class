@@ -1,0 +1,44 @@
+/*** 奥屋 直己
+ *** 課題3 問題3 : 相性占い
+ *** 提出日 6月24日
+ ***/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define N 2
+#define A 11
+#define B 2
+#define C 1
+#define D 5
+
+int compatibility(int y[N] ,int d[N] ,int d[N]){
+  
+  int w;
+  
+  w=(A*abs(y[1]-y[0])+B*abs(d[1]-d[0])+C*abs(d[1]-d[0]))%D;
+  
+  return w;
+}
+
+int main(void){
+  
+  int y[N];
+  int m[N];
+  int d[N];
+  int w;
+  
+  printf("1人目の生年月日を入力:");
+  scanf("%d %d %d",&y[0],&m[0],&d[0]);
+  printf("2人目の生年月日を入力:");
+  scanf("%d %d %d",&y[1],&m[1],&d[1]);
+  
+  w=compatibility(y ,m ,d);
+  
+  printf("%d\n",w);
+  
+  return 0;
+}
+  
+  
+  

@@ -1,0 +1,62 @@
+/*** 奥屋 直己
+ *** 課題3 問題3 : 相性占い
+ *** 提出日 6月24日
+ ***/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+#define MAX 6.0
+#define MIN 3.0
+#define N 100
+#define NUM 100
+
+double std_normal_dist(){
+  
+  time_t tp;
+  double x,y,z;
+  
+  time(&tp);
+  srand48(tp);
+  
+  x=(drand48()*MAX)-MIN;
+  y=(drand48()*MAX)-MIN;
+  
+  z=sqrt(-2*log(x))*cos(2*M_PI*y);
+  printf("%d\n",z);
+  
+  return z;
+}
+
+void display(int hst[N]){
+  
+  int i,j;
+  
+  for(i=0 ;i<6 ;i++){
+    printf("i=%d |",i-3);
+    for(j=0 ;j<hst[i] ;j++){
+      printf("*");
+    }
+    printf("\n");
+  }
+}
+  
+
+int main(void){
+
+  int hst[N]={};
+  int i;
+  double z;
+  
+  for(i=0 ;i<NUM ;i++){
+    z=std_normal_dist()+3.0;
+    hst[(int)z]++;
+  }
+  display(hst);
+  
+  return 0;
+}
+  
+  
