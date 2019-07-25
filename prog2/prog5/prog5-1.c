@@ -6,28 +6,27 @@
 #include <stdio.h>
 #include <limits.h>
 
-#define UPDATE 10000000
-#define TIME 1000000000000
+#define UPDATE 1            //nを更新する値
 
-typedef long int gereral;
+//typedef short int general;            
+//typedef unsigned short int general;
+//typedef signed int general;
+typedef unsigned int general;
+//typedef long int general;
+//typedef unsigned long int general;
 
 int main(void){
   
-  gereral n=0;
-  gereral tmp;
+  general n=0;
+  general tmp;
   int i=0;
-  
+
   do{
-    tmp=n;
-    n+=UPDATE;
-    i++;
-    if(i%TIME == 0)
-      printf("%ld %ld\n",tmp,n);
-    if(n < 0)
-      break;
-  }while(tmp < n);
-  
-  printf("%ld %ld\n",tmp,UINT_MAX);
+    tmp=n;                  //tmpに変数nを代入
+    n+=UPDATE;              //nの値を更新
+  }while(tmp < n);          //n-1の値であるtmpと新しい値nを比較
+
+  printf("Ans:%lu\n",tmp);
   
   return 0;
 
