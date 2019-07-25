@@ -1,0 +1,45 @@
+/*** 奥屋 直己
+ *** 課題 5 問題 1 : 汎整数型の変数の最大値を求めるプログラム
+ ***
+ ***/
+
+#include <stdio.h>
+#include <limits.h>
+
+#define UPDATE 10
+#define TIME 100000000
+#define N 6
+
+typedef struct{
+
+  short int shrt[2];
+  unsigned short int ushrt[2];
+  int dint[2];
+  unsigned int uint[2];
+  long int lng[2];
+  unsigned long int ulogn[2];
+  
+}general;
+
+void max(unsigned long int *lim){
+
+  int i=0;
+  
+  do{
+    lim[1]=lim[0];
+    lim[1]+=UPDATE;
+    i++;
+    if(i%TIME == 0)
+      printf("%ld %ld\n",lim[0],lim[1]);
+  }while(lim[0] < lim[1]);
+  
+}
+
+int main(void){
+  
+  general lim;
+  
+  void(&lim.shrt);
+  
+  void(&lim);
+}

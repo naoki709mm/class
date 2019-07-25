@@ -1,0 +1,19 @@
+/*** 奥屋 直己
+ *** 課題 5 問題 1 :
+ ***
+ ***/
+
+#include <stdio.h>
+
+#define UPDATE 10
+
+typedef unsigned int general;
+
+int main(void){
+
+general n;
+general tmp;
+
+while(tmp < n){
+tmp=n+UPDATE;
+}}
