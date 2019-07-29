@@ -1,0 +1,22 @@
+/*** 奥屋 直己
+ *** 課題 5 課題2 :
+ ***
+ ***/
+
+#include <stdio.h>
+#include <time.h>
+
+#define N 10
+#define M 8
+
+void initial(double *a){
+  
+  int i,j;
+  
+  
+
+int main(void){
+  
+  double a[M][N];
+  
+  
