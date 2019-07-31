@@ -1,0 +1,30 @@
+/*** 奥屋 直己 
+ *** 課題 5 問題 4 : プロフィールを構造体で作成
+ *** 7月31日
+ ***/ 
+
+#include <stdio.h>
+
+#define N 10
+
+struct profire{
+
+  char name[];
+  int age;
+  char mail[];
+  char blood;
+  double height;
+  
+}
+  
+int main(void){
+  
+  int i;
+  struct profire student={"okuya naoki",16,"naoki709mm@gmail.com","A",170.2};
+  
+  printf("%s,%d,%s,%c,%lf\n",student.name,student.age,student.mail,student.blood,student.height);
+  
+  return 0;
+}
+  
+  

@@ -5,14 +5,14 @@
 
 #include <stdio.h>
 
-#define UPDATE 100000000            //nを更新する値
+#define UPDATE 1000000000            //nを更新する値
 
 //typedef short int general;            
 //typedef unsigned short int general;
 //typedef signed int general;
 //typedef unsigned int general;
-typedef long int general;
-//typedef unsigned long int general;
+//typedef long int general;
+typedef unsigned long int general;
 
 int main(void){
   

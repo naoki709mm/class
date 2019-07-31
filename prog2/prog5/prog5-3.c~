@@ -1,0 +1,32 @@
+/*** 奥屋 直己
+ *** 課題 5 問題 3 :n個のデータの平均と分散を出す
+ ***
+ ***/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+  
+  int n;
+  int i;
+  double *dat;
+  double *ave;
+  double *dps;
+  
+  printf("データ数n :");scanf("%d",&n);
+  
+  dat=malloc(sizeof(double)*n);
+  if(dat == NULL){
+    printf("Error\n");
+  }
+  else{
+    for(i=0 ;i<n ;i++){
+      printf("データ%d :");scanf("%lf",&dat[i]);
+    }
+  }
+  
+  free(dat);
+  
+  return 0;
+}
